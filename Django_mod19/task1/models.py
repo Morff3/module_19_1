@@ -20,3 +20,10 @@ class Game(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Records(models.Model):
+    title = models.CharField(max_length=100)
+    name = models.CharField(max_length=50)
+    record = models.TextField()
+    description = models.TextField()
